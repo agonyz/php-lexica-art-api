@@ -23,10 +23,13 @@ $images = $client->api('search')->searchImage('keyword');
          * @var $image ImageObject
          */
         foreach($images as $image) {
-            dump($image->getGallery());
+            $image->getGallery();
         }
+
+        // explore a given style
+        $client->api('search')->searchImage($images[0]->getId());
 ```
 
-From ```$client``` object, you have access to all available lexica.art api endpoints.
-
+From ```$client``` object, you have access to all available lexica.art api endpoints.   
+Currently only the ```search``` endpoint is supported.
 
