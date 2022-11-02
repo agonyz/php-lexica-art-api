@@ -1,0 +1,25 @@
+{
+    "name": "agonyz/php-lexica-art-api",
+    "type": "library",
+    "description": "lexica.art API php client",
+    "homepage": "https://github.com/agonyz/php-lexica-art-api",
+    "keywords": ["lexica", "art", "api", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agonyz",
+            "homepage": "https://agonyz.de",
+            "email": "agonyz@outlook.de"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.5",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LexicaArt\\": "lib/LexicaArt/"
+        }
+    }
+}
