@@ -6,7 +6,7 @@ use stdClass;
 
 abstract class AbstractLexicaObject
 {
-    abstract public function getAttributes();
+    abstract protected function getAttributes();
 
     public function __construct(stdClass $json)
     {
