@@ -4,7 +4,7 @@ namespace LexicaArt\Objects;
 
 class ImageObject extends AbstractLexicaObject
 {
-    function getAttributes(): array
+    public function getAttributes(): array
     {
         return array_merge([
             'id' => 'string',

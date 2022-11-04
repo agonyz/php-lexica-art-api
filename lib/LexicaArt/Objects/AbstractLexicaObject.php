@@ -6,19 +6,18 @@ use stdClass;
 
 abstract class AbstractLexicaObject
 {
-    abstract function getAttributes();
+    abstract public function getAttributes();
 
     public function __construct(stdClass $json)
     {
         $attributes = $this->getAttributes();
 
-        foreach($attributes as $attributeName => $attributeType)
-        {
-            if(!isset($json->$attributeName))
+        foreach ($attributes as $attributeName => $attributeType) {
+            if (!isset($json->$attributeName)) {
                 continue;
+            }
 
-            switch ($attributeType)
-            {
+            switch ($attributeType) {
                 case 'string':
                     $this->$attributeName = $json->$attributeName;
                     break;

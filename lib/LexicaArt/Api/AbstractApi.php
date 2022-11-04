@@ -25,7 +25,6 @@ abstract class AbstractApi
             $path .= '?'.http_build_query($parameters, '', '&', PHP_QUERY_RFC3986);
         }
 
-
         $response = $this->getClient()->getHttpClient()->get($path, $requestHeaders);
 
         return ResponseMediator::getContent($response);

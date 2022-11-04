@@ -15,7 +15,7 @@ class Search extends AbstractApi
     {
         $images = [];
         $response = $this->get('search?q='.rawurlencode($keyword), $params)->images;
-        foreach($response as $item) {
+        foreach ($response as $item) {
             $images[] = new ImageObject($item);
         }
         return $images;
