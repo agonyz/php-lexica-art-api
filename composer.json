@@ -7,9 +7,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "agonyz",
+            "name": "Frank Ficzak",
             "homepage": "https://agonyz.de",
-            "email": "agonyz@outlook.de"
+            "email": "agonyz@outlook.de",
+            "role": "Developer"
         }
     ],
     "require": {
